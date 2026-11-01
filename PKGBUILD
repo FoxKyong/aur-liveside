@@ -1,7 +1,7 @@
 # Maintainer: Radim Vančo (FoxKyong) <radim.vanco@jifox.cz>
 
 pkgname=liveside
-pkgver=0.10.0
+pkgver=0.10.1
 pkgrel=1
 pkgdesc='Twitch chat client with a window, a terminal frontend and a daemon'
 arch=('x86_64')
@@ -20,7 +20,7 @@ optdepends=(
 # Rust uses (lld) cannot read: every aws_lc symbol came out undefined.
 options=('!lto')
 source=("$pkgname-$pkgver.tar.gz::https://github.com/FoxKyong/liveside/archive/refs/tags/v$pkgver.tar.gz")
-sha256sums=('30d0f3551c7d6d0f4bf92fc79137ecf838ffa3653391fdbdbb7b1d5a2219e569')
+sha256sums=('ed21a8248fe41844b215ff3b7ec50f9dc89d206fe5844d32c3ef509a4875fda0')
 
 prepare() {
   cd "$pkgname-$pkgver"
